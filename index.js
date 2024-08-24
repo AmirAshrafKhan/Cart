@@ -1,29 +1,11 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     var sections = document.querySelectorAll('.section');
 
-//     sections.forEach(function (section) {
-//         section.querySelector('.section-heading').addEventListener('click', function () {
-//             // Close all sections
-//             sections.forEach(function (sec) {
-//                 sec.querySelector('.section-content').style.display = 'none';
-//             });
-
-//             // Open the clicked section
-//             section.querySelector('.section-content').style.display = 'block';
-//         });
-//     });
-
-//     document.getElementById('addToCartButton').addEventListener('click', function () {
-//         alert('Items added to cart!');
-//     });
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var sections = document.querySelectorAll('.section');
+    let sections = document.querySelectorAll('.section');
 
     sections.forEach(function (section) {
-        var heading = section.querySelector('.section-heading');
-        var content = section.querySelector('.section-content');
+        let heading = section.querySelector('.section-heading');
+        let content = section.querySelector('.section-content');
 
         heading.addEventListener('click', function () {
             // Close all sections
